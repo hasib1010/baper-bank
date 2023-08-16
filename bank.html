@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>body{
+        background-image: url(./image/ImpartialPalatableIrishsetter-size_restricted.gif);
+        background-size: cover;
+    }</style>
+</head>
+
+<body class="bg-lime-200">
+    <header>
+        <h1 class="text-center mt-6 text-5xl font-bold text-white bg-slate-400 px-6 py-3 rounded-md w-fit mx-auto">Welcome to <span
+                class="text-fuchsia-600 font-extrabold">Dashboard </span>
+        </h1>
+
+        <section>
+            <div class="grid grid-cols-3 text-white max-w-5xl mt-11 mx-auto gap-3">
+                <div class="h-auto   bg-green-700 p-7 rounded-xl">
+                    <h1 class="text-2xl">Deposit</h1>
+                    <p class="text-5xl">$<span id="deposit-total">00</span></p>
+                </div>
+                <div class="h-auto bg-pink-400 p-7 rounded-xl">
+                    <h1 class="text-2xl">Withdraw</h1>
+                    <p class="text-5xl">$<span id="withdraw-total">00</span></p>
+                </div>
+                <div class="h-auto   bg-red-500 p-7 rounded-xl">
+                    <h1 class="text-2xl">Balance</h1>
+                    <p class="text-5xl">$<span id="all-total">1240</span></p>
+                </div>
+
+            </div>
+        </section>
+        <!-- deposit and withdraw section -->
+        <section>
+            <div class="grid grid-cols-2 text-white max-w-5xl mt-16 mx-auto gap-3">
+                <div class="h-auto   bg-cyan-500 p-7 rounded-xl">
+                    <h1 class="text-2xl">Please Deposite</h1>
+                   <div class="flex flex-col items-start pl-14">
+                    <input class="text-black w-4/5 mt-5 mb-4 pl-3" type="text" name="" id="deposit-field" placeholder="$ amount to deposit..">
+                      <button id="deposit-btn" class="px-9 py-2 text-lg font-semibold rounded bg-green-950">Deposit</button>
+                   </div>
+                </div>
+                
+                <div class="h-auto   bg-violet-600 p-7 rounded-xl">
+                    <h1 class="text-2xl">Please Withdraw</h1>
+                   <div class="flex flex-col items-start pl-14">
+                    <input class="text-black w-4/5 mt-5 mb-4 pl-3" type="text" name="" id="Withdraw-field" placeholder="$ amount to withdraw..">
+                    <button id="withdraw-btn" class="px-9 py-2 text-lg font-semibold rounded bg-green-950">Withdraw</button>
+                   </div>
+                </div>
+
+            </div>
+        </section>
+    </header>
+
+    <script src="./js/transactionn.js"></script>
+    <script src="./js/withdraw.js"></script>
+</body>
+
+</html>
